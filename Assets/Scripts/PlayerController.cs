@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float Speed = 10.0f;
+    float translation;
 
     // Start is called before the first frame update
     void Start()
     { 
-        float translation = Input.GetAxis("Vertical") * speed;
+        float translation = Input.GetAxis("Horizontal") * Speed;
     }
 
     // Update is called once per frame
